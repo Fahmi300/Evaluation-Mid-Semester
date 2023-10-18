@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .pos {
+            background-color: rgb(246, 246, 246);
+        }
+        .card-img {
+            width: 267px;
+            height: 400px;
+        }
+
+        .card-img h5 {
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .card-img .overlay {
+            background-color: rgba(0,0, 0, 0);
+            opacity: 0;
+            transition: all ease-in-out .3s;
+        }
+
+        .card-img .overlay:hover {
+            background-color: rgba(0,0, 0, 0.6);
+            opacity: 1;
+        }
+
+        @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* medium and up screens */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active, 
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start { 
+            transform: translateX(0);
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="brand1.png" width="30" height="30" class="d-inline-block align-top me-2" alt="">
+                Library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link active" aria-current="page" href="collection.html">Collection</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="map.html">Map</a>
+                </li>
+                </ul>
+                <a href="login.html">
+                    <button class="btn btn-outline-danger me-2" type="button">Login</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center mt-4">Collection Books</h1>
+
+    <div class="container mt-3"> 
+        <label for="" class="form-label"> Search Books</label>
+        <form class="d-flex w-25" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+    </div>
+
+   <section class="first">
+        <div class="container mt-5">
+            <div class="row g-2">
+                <div class="col d-flex justify-content-start">
+                    <h2>
+                        Science & Technology
+                    </h2>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <a href="scienci-technology.html">
+                        <button class="btn btn-outline-secondary co">See All</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center my-3">
+		<div class="row my-auto justify-content-center pos">
+			<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner first" role="listbox">
+					<div class="carousel-item first active">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="scienci1.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Shadows of Forgotten Ancestor
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="scienci2.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Trans jawa : Merajut Keberagaman Lanskap
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="scienci3.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Asal Usul Manusia
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="scienci4.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Relativitas
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="scienci5.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Eksplorasi Tata Surya
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="scienci6.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Industri LNG & Evolusinya di Indonesia
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+    </section>
+
+    <section class="first">
+        <div class="container mt-5">
+            <div class="row g-2">
+                <div class="col text-md-start">
+                    <h2>
+                        Fiction
+                    </h2>
+                </div>
+                <div class="col text-md-end">
+                    <button class="btn btn-outline-secondary co">See All</button>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center my-3">
+		<div class="row my-auto justify-content-center pos">
+			<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner first" role="listbox">
+					<div class="carousel-item first active">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="fiction1.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Komet
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="fiction2.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Bumi
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="fiction3.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Pulang-Pergi
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="fiction4.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Apel Emas
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="fiction5.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="fiction6.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+    </section>
+
+    <section class="first">
+        <div class="container mt-5">
+            <div class="row g-2">
+                <div class="col text-md-start">
+                    <h2>
+                        History
+                    </h2>
+                </div>
+                <div class="col text-md-end">
+                    <button class="btn btn-outline-secondary co">See All</button>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center my-3">
+		<div class="row my-auto justify-content-center pos">
+			<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner first" role="listbox">
+					<div class="carousel-item first active">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="history1.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="history2.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="history3.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="history4.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="history5.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item first">
+						<div class="col-md-3">
+							<div class="me-1">
+								<div class="card-img position-relative">
+									<img class="img-pos" src="history6.jpg" class="d-block w-100">
+                                    <div class="overlay position-absolute top-0 bottom-0 start-0 end-0">
+                                        <div class="position-absolute top-50 start-50 translate-middle">
+                                            <h5>
+                                                Book Title
+                                            </h5>
+                                            <button class="btn btn-danger">Read More</button>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>		
+	</div>
+    </section>
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2023 Library, Inc</span>
+           </div>
+        </footer>
+    </div>
+
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+                if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+        }
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

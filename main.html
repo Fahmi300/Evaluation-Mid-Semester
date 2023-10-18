@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .firstword {
+            color: red;
+        }
+        .news a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+        .news p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .box {
+            padding-top: 100px;
+            max-width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .company-info {
+            text-align: center;
+        }
+
+        .company-info h2 {
+            font-size: 24px;
+        }
+
+        .company-description {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="brand1.png" width="30" height="30" class="d-inline-block align-top me-2" alt="">
+                Library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item me-3">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="collection.html">Collection</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="map.html">Map</a>
+                </li>
+                </ul>
+                <a href="login.html">
+                    <button class="btn btn-outline-danger me-2" type="button">Login</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="d-flex w-25">
+            <h2 class="me-2 firstword">HOT</h2>
+            <h2 class="">NEWS</h2>
+        </div>
+    </div>
+    
+    <div class="container">
+        <hr>
+        <div class="row news">
+            <div class="card col mx-1 px-2 py-2 ov">
+                <img class="img-fluid" src="news1.jpg" alt="">
+                <a href="https://nasional.kompas.com/read/2023/10/17/15423371/ketika-hakim-konstitusi-saldi-isra-bertanya-quo-vadis-mk">
+                    Ketika Hakim Konstitusi Saldi Isra Bertanya, Quo Vadis MK?
+                </a>
+                <p class="card-text">Sejak Senin pagi, Majelis Hakim MK berturut-turut membacakan putusan 
+                    perkara uji materi terkait syarat pencalonan presiden dan wakil presiden. Tulisan ini 
+                    berfokus pada lima perkara yang putusannya dibacakan mulai Senin pagi hingga petang 
+                    dan berujung kontroversi.</p>
+                <a href="https://nasional.kompas.com/read/2023/10/17/15423371/ketika-hakim-konstitusi-saldi-isra-bertanya-quo-vadis-mk" class="btn btn-outline-danger">Read More</a>
+            </div>
+            <div class="card col mx-1 px-2 py-2">
+                <img class="img-fluid" src="news2.jpeg" alt="">
+                <a href="https://www.kompas.com/tren/read/2023/10/17/173000165/cara-menuju-ke-stasiun-kereta-cepat-jakarta-bandung">
+                    Cara Menuju ke Stasiun Kereta Cepat Jakarta Bandung
+                </a>
+                <p class="card-text">GM Corporate Secretary KCIC, Eva Chairunisa mengatakan, 
+                    kehadiran aksesibilitas stasiun melalui intermoda yang andal akan mempermudah 
+                    perjalanan penumpang dari dan menuju stasiun kereta cepat Whoosh.</p>
+                <a href="https://www.kompas.com/tren/read/2023/10/17/173000165/cara-menuju-ke-stasiun-kereta-cepat-jakarta-bandung" class="btn btn-outline-danger">Read More</a>
+            </div>
+            <div class="card col mx-1 px-2 py-2">
+                <img class="img-fluid" src="news3.jpg" alt="">
+                <a href="https://regional.kompas.com/read/2023/10/17/175215178/4-item-perlengkapan-pemilu-kpu-batam-sudah-berada-di-gudang-logistik">
+                    4 Item Perlengkapan Pemilu KPU Batam Sudah Berada di Gudang Logistik
+                </a>
+                <p class="card-text">Komisi Pemilihan Umum (KPU) Batam, Kepulauan Riau (Kepri) mengatakan, 
+                    pihaknya telah menerima empat perlengkapan logistik Pemilu 2024, yakni botol tinta, 
+                    bilik suara, segel kertas, dan kotak suara. Semua barang tersebut dalam kondisi aman dan disimpan 
+                    di gudang logistik KPU Batam yang berada di Sekupang, Batam.</p>
+                <a href="https://regional.kompas.com/read/2023/10/17/175215178/4-item-perlengkapan-pemilu-kpu-batam-sudah-berada-di-gudang-logistik" class="btn btn-outline-danger">Read More</a>
+            </div>
+            <div class="card col mx-1 px-2 py-2">
+                <img class="img-fluid" src="news4.jpeg" alt="">
+                <a href="https://megapolitan.kompas.com/read/2023/10/17/17493101/heru-budi-pertimbangkan-usulan-sepeda-motor-bebas-tilang-emisi">
+                    Heru Budi Pertimbangkan Usulan Sepeda Motor Bebas Tilang Emisi
+                </a>
+                <p class="card-text">Penjabat (Pj) Gubernur DKI Heru Budi Hartono akan mempertimbangkan 
+                    usulan soal sepeda motor tak kena tilang uji emisi. Untuk diketahui, sanksi tilang 
+                    bagi pengendara yang kendaraan tak lolos uji emisi kembali diberlakukan pada 1 November 
+                    2023. “Nanti akan dipikirkan soal usulan itu. Usulan kami terima,” ujar Heru di Balai Kota DKI Jakarta, Selasa (17/10/2023).</p>
+                <a href="https://megapolitan.kompas.com/read/2023/10/17/17493101/heru-budi-pertimbangkan-usulan-sepeda-motor-bebas-tilang-emisi" class="btn btn-outline-danger">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <div class="d-flex w-25">
+            <h2 class="me-2 firstword">HOT</h2>
+            <h2 class="">EVENTS</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+        <div class="row news">
+            <div class="card col mx-1 px-2 py-2 ov">
+                <img class="img-fluid" src="event1.png" alt="">
+                <a href="https://nasional.kompas.com/read/2023/10/17/15423371/ketika-hakim-konstitusi-saldi-isra-bertanya-quo-vadis-mk">
+                    Lomba Menulis Cerita Pendek untuk Anak SD
+                </a>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Nulla pellentesque dignissim enim sit. Velit ut tortor pretium viverra suspendisse potenti nullam. 
+                    Dui faucibus in ornare quam viverra orci sagittis eu. In iaculis nunc sed augue lacus viverra vitae congue. Id ornare
+                </p>
+                <a href="https://nasional.kompas.com/read/2023/10/17/15423371/ketika-hakim-konstitusi-saldi-isra-bertanya-quo-vadis-mk" class="btn btn-outline-danger">Read More</a>
+            </div>
+            <div class="card col mx-1 px-2 py-2">
+                <img class="img-fluid mh-50" src="event2.jpeg" alt="">
+                <a href="https://www.kompas.com/tren/read/2023/10/17/173000165/cara-menuju-ke-stasiun-kereta-cepat-jakarta-bandung">
+                    Gerakan Indonesia Sehat dengan Melakukan Gerak Jalan Senin Pagi
+                </a>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Nulla pellentesque dignissim enim sit. Velit ut tortor pretium viverra suspendisse potenti nullam. 
+                    Dui faucibus in ornare quam viverra orci sagittis eu. In iaculis nunc sed augue lacus viverra vitae congue. Id ornare</p>
+                <a href="https://www.kompas.com/tren/read/2023/10/17/173000165/cara-menuju-ke-stasiun-kereta-cepat-jakarta-bandung" class="btn btn-outline-danger">Read More</a>
+            </div>
+            <div class="card col mx-1 px-2 py-2">
+                <img class="img-fluid" src="event3.jpg" alt="">
+                <a href="https://regional.kompas.com/read/2023/10/17/175215178/4-item-perlengkapan-pemilu-kpu-batam-sudah-berada-di-gudang-logistik">
+                    Donasi Buku untuk Sekolah-Sekolah di Pedalaman
+                </a>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Nulla pellentesque dignissim enim sit. Velit ut tortor pretium viverra suspendisse potenti nullam. 
+                    Dui faucibus in ornare quam viverra orci sagittis eu. In iaculis nunc sed augue lacus viverra vitae congue. Id ornare</p>
+                <a href="https://regional.kompas.com/read/2023/10/17/175215178/4-item-perlengkapan-pemilu-kpu-batam-sudah-berada-di-gudang-logistik" class="btn btn-outline-danger">Read More</a>
+            </div>
+            <div class="card col mx-1 px-2 py-2">
+                <img class="img-fluid" src="event4.jpeg" alt="">
+                <a href="https://megapolitan.kompas.com/read/2023/10/17/17493101/heru-budi-pertimbangkan-usulan-sepeda-motor-bebas-tilang-emisi">
+                    Seminar Gratis Mengenai Anti-Korupsi di Aula
+                </a>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Nulla pellentesque dignissim enim sit. Velit ut tortor pretium viverra suspendisse potenti nullam. 
+                    Dui faucibus in ornare quam viverra orci sagittis eu. In iaculis nunc sed augue lacus viverra vitae congue. Id ornare</p>
+                <a href="https://megapolitan.kompas.com/read/2023/10/17/17493101/heru-budi-pertimbangkan-usulan-sepeda-motor-bebas-tilang-emisi" class="btn btn-outline-danger">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box mt-5">
+        <div class="company-info">
+            <h2>About Us</h2>
+            <p class="company-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet purus gravida quis blandit turpis. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Eleifend donec pretium vulputate sapien nec sagittis. Risus at ultrices mi tempus imperdiet. Massa eget egestas purus viverra accumsan in. Urna molestie at elementum eu facilisis sed odio. Cras ornare arcu dui vivamus arcu felis bibendum. Quis vel eros donec ac odio. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Neque viverra justo nec ultrices dui. Pellentesque sit amet porttitor eget. Molestie at elementum eu facilisis sed.
+
+            Lacus vel facilisis volutpat est velit egestas dui id. Nunc consequat interdum varius sit. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Varius vel pharetra vel turpis nunc eget lorem. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Consectetur adipiscing elit duis tristique. Cras tincidunt lobortis feugiat vivamus at augue eget. Nunc aliquet bibendum enim facilisis gravida neque convallis. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices.
+
+            Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Nisi quis eleifend quam adipiscing vitae proin sagittis. Malesuada proin libero nunc consequat interdum varius sit. Mi eget mauris pharetra et ultrices neque ornare aenean euismod. Ultricies tristique nulla aliquet enim. Sit amet porttitor eget dolor. Condimentum lacinia quis vel eros donec ac odio tempor. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Auctor augue mauris augue neque gravida in fermentum. Vel fringilla est ullamcorper eget. Luctus accumsan tortor posuere ac ut consequat semper viverra nam.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2023 Library, Inc</span>
+           </div>
+        </footer>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
